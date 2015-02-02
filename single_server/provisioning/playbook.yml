@@ -1,0 +1,6 @@
+- hosts: db
+  remote_user: vagrant
+  sudo: yes
+  tasks:
+  - name: install postgresql
+    apt: name=postgresql state=present
